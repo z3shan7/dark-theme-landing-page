@@ -50,9 +50,13 @@ picture {
     max-width: 100%;
 }
 body{
-    background-color:var(--Dark-Blue-intro-and-email-sign-up-background);
+    background-color: var(--Dark-Blue-main-background);
     max-width:1440px;
     min-width: 375px;
+    
+}
+.header-intro-section{
+    background-color:var(--Dark-Blue-intro-and-email-sign-up-background);
 
 }
 
@@ -105,7 +109,7 @@ header{
     background-image: url(./images/bg-curvy-desktop.svg);
     background-attachment: scroll;
     background-repeat: no-repeat;
-    background-position: 100% 175% ;
+    background-position: center bottom ;
     background-size: stretch;
     margin-bottom: 0px;
    
@@ -135,8 +139,7 @@ header{
     color: var(--White);
     border: none;
     outline: 0;
-    border-radius: 40px;
- 
+    border-radius: 40px; 
 }
 .intro-Btn:hover{
     background-color:var(--Cyan-inside-call-to-action-gradient);
@@ -151,14 +154,9 @@ header{
         font-size: 2rem;
 
     }
-
-
 }
 
 @media screen and (max-width:750px) {
-
-    
-   
     .intro-section{
         margin: 10px auto; 
         text-align: center;
@@ -190,6 +188,14 @@ header{
         font-size: 1.5rem;
 
     }
-
-
 }
+.features-section{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-gap: 80px;
+    text-align: center;
+    color: #fff;
+    margin-top: 6rem;
+    justify-content: center;
+}
+
