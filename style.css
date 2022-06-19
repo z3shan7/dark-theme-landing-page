@@ -145,7 +145,7 @@ header{
     background-color:var(--Cyan-inside-call-to-action-gradient);
     cursor: pointer;
 }
-@media screen and (max-width:890px){
+@media screen and (max-width:900px){
     .intro-text{
         width: 65%;
     }
@@ -191,11 +191,32 @@ header{
 }
 .features-section{
     display: grid;
-    grid-template-columns: 400px 400px;
-    grid-gap: 80px;
+    grid-template-columns: 25rem 25rem;
+    grid-gap: 9.375rem;
     text-align: center;
     color: #fff;
     margin-top: 6rem;
     justify-content: center;
+    align-items: center;
+}
+.features-section img{
+    margin-bottom: 10px;
+}
+.accessing-files{
+    margin-top: 10px;
+}
+.features-section .header{
+    font-family: var(--ff-raleway);
+    font-size: 1.4rem;
+    font-weight: var(--fw-700);
+    margin-bottom: 10px;
+
+}
+@media screen and (max-width:1004px){
+    .features-section{
+        grid-template-columns: 25rem;
+    }
+
+
 }
 
