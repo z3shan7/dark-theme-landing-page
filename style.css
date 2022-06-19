@@ -51,6 +51,8 @@ picture {
 }
 body{
     background-color:var(--Dark-Blue-intro-and-email-sign-up-background);
+    max-width:1440px;
+    min-width: 375px;
 
 }
 
@@ -82,7 +84,7 @@ header{
     cursor: pointer;
 
 }
-@media screen and (max-width:580px){
+@media screen and (max-width:650px){
 
     header{
         padding: 1rem;
@@ -97,8 +99,15 @@ header{
     }
 }
 .intro-section{
+    font-family: var(--ff-raleway);
     text-align: center;
-    font-family: var(--ff-Open-Sans);
+    margin: 10px auto; 
+    background-image: url(./images/bg-curvy-desktop.svg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: 100% 175% ;
+    background-size: stretch;
+    margin-bottom: 0px;
    
 }
 
@@ -110,6 +119,7 @@ header{
     margin-top: 20px;
 }
 .intro-text{
+    font-family: var(--ff-Open-Sans);
     font-size: 1rem;
     color: var(--White);
     width: 35%;
@@ -132,30 +142,54 @@ header{
     background-color:var(--Cyan-inside-call-to-action-gradient);
     cursor: pointer;
 }
-
-.curvy-img{
-    display: block;
-    z-index: -1;
-    position: absolute;
-    top: 85%;
-    
-}
-@media screen and (max-width:810px) {
-
-    .intro-section{
-      width: 90%;
-      margin: auto;
-    
+@media screen and (max-width:890px){
+    .intro-text{
+        width: 65%;
     }
     .intro-header{
         width: 90%;
         font-size: 2rem;
 
     }
-    .intro-text{
-        width: 65%;
+
+
+}
+
+@media screen and (max-width:750px) {
+
+    
+   
+    .intro-section{
+        margin: 10px auto; 
+        text-align: center;
+        padding-bottom:0;
+        background-image: url('./images/bg-curvy-mobile.svg');
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+        margin-bottom: 0px;
+    }
+    .intro-img{
+        max-width: 100%;
+        width:90%;
+        height: auto;
+
     }
    
 
     
+}
+@media screen and (max-width:480px){
+    .intro-text{
+        width: 80%;
+        font-size: 14px;
+    }
+    .intro-header{
+        width: 90%;
+        font-size: 1.5rem;
+
+    }
+
+
 }
