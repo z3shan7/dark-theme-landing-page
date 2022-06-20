@@ -124,7 +124,7 @@ header{
 }
 .intro-text{
     font-family: var(--ff-Open-Sans);
-    font-size: 1rem;
+    font-size: 14px;
     color: var(--White);
     width: 35%;
     margin: auto;
@@ -173,15 +173,13 @@ header{
         width:90%;
         height: auto;
 
-    }
-   
-
+    } 
     
 }
 @media screen and (max-width:480px){
     .intro-text{
         width: 80%;
-        font-size: 14px;
+        font-size: 12px;
     }
     .intro-header{
         width: 90%;
@@ -215,8 +213,11 @@ header{
 
 }
 .features-section .text{
-    width: 80%;
+    width: 78%;
     margin: auto;
+    font-family: var(--ff-Open-Sans);
+    font-size: 14px;
+
 }
 @media screen and (max-width:810px){
     .section-1,.section-2{
@@ -226,18 +227,90 @@ header{
     .col{
         width: auto;  
     }
-   
-
-
 }
 @media screen and (max-width:450px){
+    /* .features-section{
+        padding: 1rem;
+     } */
     .features-section .header{
         font-size: 1rem;
     }
     .features-section .text{
-        font-size: 18px;
+        font-size: 14px;
         width: 100%;
     }
 
+}
+.productive-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    gap: 100px;
+    margin-top: 6rem;
+}
+.stay-productive-img-section{
+    flex-basis: 50%;
 
 }
+
+.productive-article{
+    flex-basis: 50%;
+    color: var(--White);
+}
+.productive-header{
+    font-size: 2rem;
+    font-family: var(--ff-raleway);
+    width: 70%;
+}
+.productive-text{
+    margin-top: 15px;
+    line-height: 22px; 
+    font-size: 14px; 
+}
+.productive-show-link{
+    display: flex;
+    align-items: center;
+    padding-bottom: 4px;
+    width: 186px;
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+    margin-top: 28px;
+    font-size: 18px;
+    color: var(--Cyan-inside-call-to-action-gradient);
+    
+}
+.arrow-img{
+    margin-left: 8px;
+    margin-top: 2px;
+}
+.productive-show-link:hover{
+    color: var(--White);
+    border-color: var(--White);
+    cursor: pointer;
+
+}
+@media screen and (max-width:810px){
+    .productive-section{
+        flex-direction: column;
+    }
+    .productive-header{
+        width: 90%;
+    }
+    
+}
+@media screen and (max-width:450px){
+    .productive-header{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .productive-text{
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .productive-show-link{
+        font-size: 14px;
+        width: 150px;
+    }
+}
+
