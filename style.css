@@ -267,7 +267,7 @@ header{
 .productive-text{
     margin-top: 15px;
     line-height: 22px; 
-    font-size: 14px; 
+    font-size: 16px; 
 }
 .productive-show-link{
     display: flex;
@@ -320,14 +320,14 @@ header{
     margin: auto;
     display: flex;
     flex-flow: row wrap;
-    gap: 20px;
+    gap: 30px;
     margin-top: 8rem;
 
 }
 .quote-img{
     position: absolute;
     top: 40px;
-    left: 10px;
+    left: 5px;
     z-index: -1;
 }
 .profile-description{
@@ -345,7 +345,10 @@ header{
     background-color: var(--Dark-Blue-testimonials-background);
     color: #fff;
     width: 300px;
-   
+    -webkit-box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18);
+    -moz-box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18);
+    box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18);
+    border-radius: 5px;
 }
 .about-fylo{
     font-size: 15px;
@@ -395,4 +398,64 @@ header{
     
     }
 }
-
+.sign-up-section{
+    font-family: var(--ff-Open-Sans);
+    background-color: hsl(217, 28%, 15%);
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 20px;
+    padding: 30px;
+    position: absolute;
+    left: 15%;
+    top: -35%;
+    /* background-color: var(--Dark-Blue-intro-and-email-sign-up-background);
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 3rem;
+    border-radius: 5px;
+    -webkit-box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18);
+    -moz-box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18);
+    box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18); */
+}
+.sign-up-title{
+    font-family: var(--ff-raleway);
+    color: var(--White);
+    font-size: 1.6rem;
+}
+.sign-up-text{
+    font-family: var(--ff-Open-Sans);
+    background-color: hsl(217, 28%, 15%);
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 20px;
+    padding: 30px;
+    position: absolute;
+    left: 15%;
+    top: -35%;
+}
+.form{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 30px;
+}
+.email{
+    width: 40vw;
+    height: 45px;
+    border: none;
+    padding: 0 1rem;
+    border-radius: 30px;
+}
+.submit-btn{
+    background: linear-gradient( to right,hsl(176, 68%, 64%)2%,hsl(198, 60%, 50%) );
+    margin: 0 auto;
+    text-align: center;
+    width: 12.5rem;
+    height: 3rem;
+    border-style: none;
+    border-radius: 35px 35px/40px 40px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Raleway';
+    font-weight: 700;
+}
