@@ -402,8 +402,16 @@ header{
     
     }
 }
+.footer-bg{
+    position: relative;
+    background-color:var(--Dark-Blue-footer-background);
+    height: 600px;
+    margin-top: 5rem;
+
+    
+}
 .sign-up-section{
-     background-color: var(--Dark-Blue-intro-and-email-sign-up-background);
+    background-color: var(--Dark-Blue-intro-and-email-sign-up-background);
     text-align: center;
     width: 50%;
     margin: auto;
@@ -412,7 +420,13 @@ header{
     -webkit-box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18);
     -moz-box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18);
     box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18); 
+    position: absolute;
+    top: -170px;
+    left: 25%;
+    border-radius: 5px;
+ 
 }
+
 .sign-up-title{
     font-family: var(--ff-raleway);
     color: var(--White);
@@ -458,6 +472,7 @@ header{
 
    
 }
+
 @media screen and (max-width:910px){
     .sign-up-section{
         padding: 2rem;
@@ -473,10 +488,7 @@ header{
     }
     
 }
-.footer-bg{
-    background-color:var(--Dark-Blue-footer-background);
-    
-}
+
 @media screen and (max-width:560px){
     .sign-up-section{
         width: 60%;
@@ -489,4 +501,84 @@ header{
         
     }
     
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 500px;
+    margin-top: 3rem;
+    width: 85%;
+    margin: auto;
+    padding-top: 4rem;
+    
+}
+.footer-img{
+    margin-top: 5rem;
+}
+.footer-section{
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    color: #fff;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+.company-address{
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+.location-img{
+    width: 15px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+.address{
+    width: 90%;
+    line-height: 25px;
+}
+.digital-address{
+    display: flex;
+    flex-direction: column;
+}
+.contact,.mail{
+    display: flex;
+    margin: 9px 0;
+}
+.phone-img,.mail-img{
+    margin-right: 20px;
+}
+.about-list,.contact-list{
+    margin-top: 0;
+    list-style: none;
+}
+.about-list li,.contact-list li{
+    padding: 8px 0;
+    
+}
+.icon-list{
+    margin-top: 0;
+    list-style: none;
+    display: flex;
+    
+}
+.icon-links{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 0.5rem;
+    font-size: 14px;
+    margin: 0 7px;
+    
+}
+@media screen and (max-width:910px){
+   
+    .footer-section{
+       flex-direction: column;
+        gap: 30px;
+       
+    }
+
 }
