@@ -49,6 +49,9 @@ img,
 picture {
     max-width: 100%;
 }
+html {
+    scroll-behavior: smooth;
+  }
 body{
     background-color: var(--Dark-Blue-main-background);
     max-width:1440px;
@@ -77,12 +80,13 @@ header{
     display: flex;
     list-style: none;
 }
-.nav-links{
+.nav-links a{
     color: rgba(255, 255, 255, 0.6);
     padding: 0 20px;
     font-size: 18px;
+    text-decoration: none;
 }
-.nav-links:hover{
+.nav-links a:hover{
     text-decoration: underline;
     color: rgba(255, 255, 255, 2);
     cursor: pointer;
@@ -399,24 +403,15 @@ header{
     }
 }
 .sign-up-section{
-    font-family: var(--ff-Open-Sans);
-    background-color: hsl(217, 28%, 15%);
-    margin: 0 auto;
-    width: 70%;
-    border-radius: 20px;
-    padding: 30px;
-    position: absolute;
-    left: 15%;
-    top: -35%;
-    /* background-color: var(--Dark-Blue-intro-and-email-sign-up-background);
+     background-color: var(--Dark-Blue-intro-and-email-sign-up-background);
     text-align: center;
     width: 50%;
     margin: auto;
-    padding: 3rem;
+    padding: 4rem;
     border-radius: 5px;
     -webkit-box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18);
     -moz-box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18);
-    box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18); */
+    box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18); 
 }
 .sign-up-title{
     font-family: var(--ff-raleway);
@@ -424,38 +419,52 @@ header{
     font-size: 1.6rem;
 }
 .sign-up-text{
-    font-family: var(--ff-Open-Sans);
-    background-color: hsl(217, 28%, 15%);
-    margin: 0 auto;
-    width: 70%;
-    border-radius: 20px;
-    padding: 30px;
-    position: absolute;
-    left: 15%;
-    top: -35%;
+    margin-top: 20px;
+    color: #fff;
+    
 }
 .form{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.4rem;
     margin-top: 30px;
 }
 .email{
-    width: 40vw;
+    width: 35vw;
     height: 45px;
     border: none;
     padding: 0 1rem;
     border-radius: 30px;
+
 }
 .submit-btn{
-    background: linear-gradient( to right,hsl(176, 68%, 64%)2%,hsl(198, 60%, 50%) );
+    background:var(--Blue-inside-call-to-action-gradient);
     margin: 0 auto;
     text-align: center;
-    width: 12.5rem;
-    height: 3rem;
+    width: 13.5rem;
+    height: 45px;
     border-style: none;
-    border-radius: 35px 35px/40px 40px;
+    border-radius: 50px;
     color: hsl(0, 0%, 100%);
     font-family: 'Raleway';
     font-weight: 700;
+}
+.submit-btn:hover{
+    background-color:var(--Cyan-inside-call-to-action-gradient);
+    cursor: pointer;
+
+   
+}
+@media screen and (max-width:910px){
+    .form{
+        flex-direction: column;
+    }
+    .submit-btn{
+        width: auto;
+    }
+
+}
+.footer-bg{
+    background-color:var(--Dark-Blue-footer-background);
+    
 }
