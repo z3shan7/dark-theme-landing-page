@@ -413,16 +413,16 @@ header{
 .sign-up-section{
     background-color: var(--Dark-Blue-intro-and-email-sign-up-background);
     text-align: center;
-    width: 50%;
+    width: 60%;
     margin: auto;
-    padding: 4rem;
+    padding: 5rem;
     border-radius: 5px;
     -webkit-box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18);
     -moz-box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18);
     box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18); 
     position: absolute;
-    top: -170px;
-    left: 25%;
+    top: -180px;
+    left: 15%;
     border-radius: 5px;
  
 }
@@ -440,18 +440,30 @@ header{
 }
 .form{
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 1.4rem;
     margin-top: 30px;
+    position: relative;
 }
 .email{
+    box-sizing: border-box;
     width: 35vw;
     height: 45px;
     border: none;
     border-radius: 30px;
-    padding-left: 10px;
+    padding: 25px;
     outline: none;
 
+}
+.alert-text{
+    color: var(--Light-Red-error);
+    display: none;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.alert-text.showAlert{
+   display: block;
 }
 
 .submit-btn{
@@ -459,7 +471,7 @@ header{
     margin: 0 auto;
     text-align: center;
     width: 13.5rem;
-    height: 45px;
+    height: 3rem;
     border-style: none;
     border-radius: 50px;
     color: hsl(0, 0%, 100%);
@@ -480,7 +492,7 @@ header{
     .form{
         flex-direction: column;
     }
-    .email,.submit-btn{
+   .email,.submit-btn{
         width: 100%;
     }
     ::placeholder{
@@ -491,7 +503,8 @@ header{
 
 @media screen and (max-width:560px){
     .sign-up-section{
-        width: 60%;
+        width: 70%;
+        left: 5%;
     }
     .sign-up-title{
         font-size: 1.1rem;
@@ -499,6 +512,9 @@ header{
     .sign-up-text{
         font-size: 12px;
         
+    }
+    .alert-text{
+        font-size: 12px;
     }
     
 }
@@ -574,7 +590,6 @@ footer{
     
 }
 @media screen and (max-width:910px){
-   
     .footer-section{
        flex-direction: column;
         gap: 30px;

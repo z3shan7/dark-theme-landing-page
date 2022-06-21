@@ -1,6 +1,7 @@
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 const SubBtn = document.getElementById('SubBtn');
+const alertText = document.querySelector('.form .alert-text');
 
 form.addEventListener('submit', function(e){
     e.preventDefault()
@@ -9,6 +10,7 @@ form.addEventListener('submit', function(e){
 
 function emailValidation(){
     if(email.value === ''   ){
-        console.log('enter valid email address');
+        alertText.classList.add('showAlert')
+       
     }
 }
