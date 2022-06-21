@@ -504,7 +504,7 @@ header{
 @media screen and (max-width:560px){
     .sign-up-section{
         width: 70%;
-        left: 5%;
+        left: 4%;
     }
     .sign-up-title{
         font-size: 1.1rem;
@@ -544,13 +544,13 @@ footer{
 }
 .company-address{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 30%;
 }
 .location-img{
     width: 15px;
-    margin-bottom: 30px;
-    margin-right: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 .address{
     width: 90%;
@@ -592,8 +592,20 @@ footer{
 @media screen and (max-width:910px){
     .footer-section{
        flex-direction: column;
-        gap: 30px;
-       
+        gap: 30px; 
+    }
+    .footer-bg{
+        height: auto;
+    }
+    .company-address{
+        width: 90%;
+    }
+    footer{
+        padding-top: 6rem;
+    }
+    .about-list,.contact-list{
+        margin: 0;
+        padding: 0;
     }
 
 }
