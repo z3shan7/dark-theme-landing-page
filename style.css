@@ -83,7 +83,7 @@ header{
 .nav-links a{
     --ff-raleway: 'Raleway', sans-serif;
     color: rgba(255, 255, 255, 0.6);
-    padding: 0 10px;
+    padding: 0 15px;
     font-size: 18px;
     text-decoration: none;
 }
@@ -102,8 +102,9 @@ header{
     .logo{
         width: 90px;
     }
-    .nav-links{
+    .nav-links a{
         font-size: 13px;
+        padding: 8px;
     }
 }
 .intro-section{
@@ -441,7 +442,7 @@ header{
 .form{
     display: flex;
     justify-content: center;
-    gap: 1.4rem;
+    gap: 1rem;
     margin-top: 30px;
     position: relative;
 }
@@ -588,6 +589,11 @@ footer{
     font-size: 14px;
     margin: 0 7px;
     
+}
+.icon-links:hover{
+    color: var(--Cyan-inside-call-to-action-gradient);
+    border-color: var(--Cyan-inside-call-to-action-gradient);
+    cursor: pointer;
 }
 @media screen and (max-width:910px){
     .footer-section{
