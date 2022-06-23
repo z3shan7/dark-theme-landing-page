@@ -67,7 +67,7 @@ body{
 header{
     max-width: 90vw;
     margin: auto;
-    padding: 2rem;
+    padding: 3.3rem;
 }
 
 .navbar{
@@ -81,7 +81,7 @@ header{
     list-style: none;
 }
 .nav-links a{
-    --ff-raleway: 'Raleway', sans-serif;
+    --ff-Open-Sans:'Open Sans', sans-serif;
     color: rgba(255, 255, 255, 0.6);
     padding: 0 15px;
     font-size: 18px;
@@ -129,7 +129,7 @@ header{
 }
 .intro-text{
     font-family: var(--ff-Open-Sans);
-    font-size: 14px;
+    font-size: 16px;
     color: var(--White);
     width: 35%;
     margin: auto;
@@ -139,12 +139,14 @@ header{
 
 .intro-Btn{
     margin-top: 25px;
-    background-color: var(--Blue-inside-call-to-action-gradient);
-    padding: 1rem 4.3rem;
+    background: linear-gradient( to right,hsl(176, 68%, 64%)2%,hsl(198, 60%, 50%) );
+    padding: 1rem 5.3rem;
     color: var(--White);
     border: none;
     outline: 0;
     border-radius: 40px; 
+    font-weight: 700;
+    font-size: 18px;
 }
 .intro-Btn:hover{
     background-color:var(--Cyan-inside-call-to-action-gradient);
@@ -321,7 +323,7 @@ header{
 .testimonials{
     position: relative;
     padding: 80px 10px 250px 10px;
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-flow: row wrap;
@@ -349,7 +351,7 @@ header{
     padding: 2rem;
     background-color: var(--Dark-Blue-testimonials-background);
     color: #fff;
-    width: 300px;
+    width: 330px;
     -webkit-box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18);
     -moz-box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18);
     box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18);
@@ -416,22 +418,22 @@ header{
     text-align: center;
     width: 60%;
     margin: auto;
-    padding: 5rem;
+    padding:3rem 4rem;
     border-radius: 5px;
-    -webkit-box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18);
-    -moz-box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18);
-    box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.18); 
+    -webkit-box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.28);
+    -moz-box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.28);
+    box-shadow: -3px 10px 9px -3px rgba(0,0,0,0.28); 
     position: absolute;
     top: -180px;
     left: 15%;
-    border-radius: 5px;
+    border-radius: 10px;
  
 }
 
 .sign-up-title{
     font-family: var(--ff-raleway);
     color: var(--White);
-    font-size: 1.6rem;
+    font-size: 2.1rem;
     font-weight: var(--fw-700);
 }
 .sign-up-text{
@@ -468,7 +470,7 @@ header{
 }
 
 .submit-btn{
-    background:var(--Blue-inside-call-to-action-gradient);
+    background: linear-gradient( to right,hsl(176, 68%, 64%)2%,hsl(198, 60%, 50%) );
     margin: 0 auto;
     text-align: center;
     width: 13.5rem;
