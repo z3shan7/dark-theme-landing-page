@@ -20,7 +20,6 @@ Your users should be able to:
 
 ![](./images/screencapture-file-D-2-My-Workshop-front-end-Mentor-Challenges-Junior-Completed-projects-fylo-dark-theme-landing-page-master-fylo-dark-theme-landing-page-master-index-html-2022-09-12-01_08_56.png)
 
-![](./images/screencapture-file-D-2-My-Workshop-front-end-Mentor-Challenges-Junior-Completed-projects-fylo-dark-theme-landing-page-master-fylo-dark-theme-landing-page-master-index-html-2022-09-12-01_08_56.png)
 
 
 - [Live Site](https://z3shan7.github.io/dark-theme-landing-page/)
